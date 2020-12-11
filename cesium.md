@@ -3,13 +3,13 @@
 
 #### 世界坐标转地理坐标
 
-`var cartoCoordinates = window._cesium.scene.globe.ellipsoid.cartesianToCartographic(
+`var cartCoordinates = window._cesium.scene.globe.ellipsoid.cartesianToCartographic(
         cartesianCoordinates,
       )`
 #### 地理坐标（弧度）转经纬度坐标
 `const clickCoord = [
-        Cesium.Math.toDegrees(cartoCoordinates.longitude),
-        Cesium.Math.toDegrees(cartoCoordinates.latitude),
+        Cesium.Math.toDegrees(cartCoordinates.longitude),
+        Cesium.Math.toDegrees(cartCoordinates.latitude),
       ]`
 ## camera和globel中的pick
 这两个里面的pick一般搭配使用，通过camera中的getPickRay获取ray（射线），然后通过globel中的pick方法，获取世界坐标

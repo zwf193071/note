@@ -21,3 +21,10 @@ Vue.use(SFView);
 在其他页面组件内，即可引用该包下面的`search-input`组件，如下图所示：
 
 ![alt](./2020/12/img/npm_2.png)
+
+## npm仓库地址
+公司默认使用的是淘宝的[npm](https://registry.npm.taobao.org/)库，可通过`npm config get registry`查看设置过的所有源
+
+公司内部私有npm包
+
+## 问题
