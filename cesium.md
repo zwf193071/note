@@ -65,3 +65,4 @@ viewer.scene.primitives.add(rectangleCollection);
 代码运行完后的效果图如下所示：
 
 ![地图](./2020/12/img/eath_0.jpg)
+
