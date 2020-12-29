@@ -16,6 +16,50 @@
 <body>
     <h2>得分：<span id="score">0</span></h2>
     <div id="map"></div>
-    <script src="./index.js"></script>
+    <script type="module">
+        import Game from './src/game.js'
+
+        {
+            let el = document.querySelector("#map");
+            let game = new Game(el, 10);
+            // w 87
+            // d 68
+            // s 83
+            // a 65
+            // game.addControl(function(){
+            //     window.addEventListener("keydown", ({keyCode}) => {
+            //         switch(keyCode) {
+            //             case 37:
+            //                 this.snake.changeDir("left");
+            //                 break;
+            //             case 38:
+            //                 this.snake.changeDir("top");
+            //                 break;
+            //             case 39:
+            //                 this.snake.changeDir("right");
+            //                 break;
+            //             case 40:
+            //                 this.snake.changeDir("bottom");
+            //                 break;  
+            //         }
+            //     });
+            // })
+            // game.toGrade = function(grade) {
+            //     document.querySelector("#score").innerHTML = grade;
+            // }
+            game.on("changeGrade", (grade) => {
+                document.querySelector("#score").innerHTML = grade;
+            })
+            game.on("over", () => {
+                alert("游戏结束");
+            })
+            game.on("win", () => {
+                alert("太棒啦，您完成了游戏");
+            })
+            document.onclick = function() {
+                game.start();
+            }
+        }
+    </script>
 </body>
 </html>
