@@ -38,3 +38,10 @@ var a = {}, b = Object.prototype;
 ```
 输出`[false, true]`
 **解析：**a只有属性__proto__，并没有prototype
+
+## .MJS文件
+- mjs是EcmaScript模块的扩展
+- MJS文件是包含ES模块（ECMAScript模块）的源代码文件，用于Node.js应用程序。
+- MJS文件是用JavaScript编写的，也可以在Node.js上下文之外使用.JS扩展名。
+
+- ES模块允许Web和应用程序开发人员将代码组织成更小的可重用组件。
