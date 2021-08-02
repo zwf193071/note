@@ -23,3 +23,15 @@ triggerRef触发页面更新，没有对应的triggerReactive方法
 - ssr渲染
  1. 当有大量静态内容时，这些内容会被当做纯字符串推进一个buffer内
  2. 当静态内容大到一定量级时，会用_createStaticVNode方法在客户端生成一个static node，这些静态node，会被直接innerHtml，不需要创建对象再根据对象渲染
+
+ ## Compile the Vue SFC(单文件组件) to X
+ - 把SFC编译到原生DOM
+ - 把SFC编译到Web Component
+
+ ## Vite
+esm前端模块化 ESM
+
+ - 基于ESM（ECMA Script Modules）的Dev Server + HMR
+ - 基于esbuild的依赖预优化
+ - 基于Rollup的Plugins + Bundle
+ - SSR(SSR：server side render:服务端渲染)
